@@ -109,7 +109,7 @@ def predict_single(img_file):
     heading = ['model', 'probability', 'prediction']
     covid_RF = predict_Covid_RF(img_file)
     covid_LR = predict_Covid_LR(img_file)
-    covid_SVM = predict_Covid_RF(img_file)
+    covid_SVM = predict_Covid_SVM(img_file)
     pneu = pneumonia_CNN(img_file)
     out = np.vstack((heading, covid_RF, covid_LR, covid_SVM, pneu))
     return (out)
