@@ -31,7 +31,7 @@ CORS(app, support_credentials=True)
 # load the models
 RFC_Model = pickle.load(open('./model/RF_model.pkl', 'rb'))
 LR_Model = pickle.load(open('./model/LR_model.pkl', 'rb'))
-SVM_Model = pickle.load(open('./model/SVM_model.pkl', 'rb))
+SVM_Model = pickle.load(open('./model/SVM_model.pkl', 'rb'))
 reconstructed_model = keras.models.load_model('./model/keras_model')
 
 
